@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+    <!--
+    WRITTEN BY: Mayuri Buckius
+    EMAIL: mbuckius@uci.edu
+    -->
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Your name here">
+    <meta name="description" content="description of your page">
+    <!-- you would link to an external stylesheet here! -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- you would also link to Bootstrap here! -->
+    <link rel="icon" href="assets/bluelogo.svg">
+    <title>Mayuri Buckius</title>
+    </head>
+
+    <body>
+        <!-- HEADER AND MENU -->
+        <header class="header" id="top">
+          <nav class="nav">
+              <!-- logo -->
+              <a href="index.html" class="logo">
+                <img src="assets/bluelogo.svg" alt="A logo for the site, a cirle with MB inside">
+              </a>
+      
+              <!-- bar and x icon for hamburger menu -->
+              <div class="icon" id="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fas fa-times"></i>
+              </div>
+      
+              <!-- navigation bar -->
+              <div class="nav-list" id="navigation">
+                <a href="index.html#top">About Me</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="contact.html">Contact</a>
+              </div>
+          </nav>
+        </header>
+      
+        <h2 class="heading">Hillside Guesthouse</h2>
+      
+        <div class="ecommerce-info">
+          <div class="store-photos">
+            <img src="assets/hgh-home-page.png" alt="Photo of home page for hillside guest house.  Shows title of site with a background photo of the front of the house">
+            <img src="assets/hgh-testimonials.png" alt="Photo of testimonials section of site.  This shows the first slide with a review, date, and guest name.">
+          </div>
+          <div>
+            <p>
+                This is a website for an airbnb.  It shows information about the house and a 
+                photo gallery.  There is a slideshow of reviews that user can click through. 
+                It also links to airbnb.com, so people can check availability and book.
+            </p>
+          </div>
+          
+        </div>>
+      
+        <script>
+          function toggleMenu() {
+            var x = document.getElementById("navigation");
+            x.classList.toggle('open');
+          }
+        </script>
+      </body>
+</html>

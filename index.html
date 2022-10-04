@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Mayuri Buckius
+EMAIL: mbuckius@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Your name here">
+  <meta name="description" content="description of your page">
+   <!-- you would link to an external stylesheet here! -->
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <!-- you would also link to Bootstrap here! -->
+   <link rel="icon" href="assets/bluelogo.svg">
+  <title>Mayuri Buckius</title>
+</head>
+
+<body>
+  <!-- HEADER AND MENU -->
+  <header class="header" id="top">
+    <nav class="nav">
+        <!-- logo -->
+        <a href="index.html" class="logo">
+          <img src="assets/bluelogo.svg" alt="A logo for the site, a cirle with MB inside">
+        </a>
+
+        <!-- bar and x icon for hamburger menu -->
+        <div class="icon" id="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+
+        <!-- navigation bar -->
+        <div class="nav-list" id="navigation">
+          <a href="index.html#top">About Me</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+  </header>
+
+  <!-- PHOTO AND ABOUT ME -->
+  <section class="home-section" id="home">
+    <div class="home-page">
+      <img class="profile-pic" src="assets/profile.jpeg" alt="photo of me" >
+      <div>
+        <h2 class="heading">Hello, my name is <br> Mayuri Buckius</h2>
+        <p>
+          I am a Computer Science major at University of California, Irvine. I will be graduating June 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis eros est. Suspendisse feugiat lacus in mi posuere, quis facilisis nunc rhoncus. Sed consequat purus ut orci mollis eleifend. Phasellus ut placerat lectus, nec cursus augue. Fusce quis pharetra mi. Duis in lacus eu lacus mollis gravida at eu libero. Pellentesque a risus quis felis mollis suscipit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="project-container" id="projects">
+    <h2 class="heading">projects</h2>
+
+    <div class="project-container">
+      <a href="ecommerce.html">E-Commerce Store</a>
+      <img src="assets/cc-checkout-page.png" alt="">
+      <a href="guesthouse.html">Hillside Guesthouse</a>
+      <img src="assets/hgh-home-page.png" alt="" >
+    </div>
+  </section>
+  
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <!-- <h2 class="heading">Contact</h2>  
+        <div class="contact-content">
+            <form id="contact-form" action="./contact-form-handler.php" method="POST" class="form contact-form">
+                <div class="input-group-wrap">
+                    <div class="input-group">
+                        <input name="name" type="text" class="input" placeholder="Name" required>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input name="email" type="email" class="input" placeholder="E-mail" required>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <input name="subject" type="text" class="input" placeholder="Subject" required>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="input-group">
+                    <textarea name="message" class="input" cols="30" rows="8" placeholder="Message" required></textarea>
+                    <span class="bar"></span>
+                </div>                        
+
+                <button type="submit" class="btn form-btn btn-purple">Send Message
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+                
+            </form>
+        </div> -->
+
+        <h3>Contact us</h3>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+  </section>
+  
+
+  <!-- <p>
+    <a href="http://validator.w3.org/check?uri=referer">
+       W3C validator
+    </a>
+  </p> -->
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("navigation");
+      var icons = document.getElementById("icon");
+      menu.classList.toggle('open');
+      icons.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Mayuri Buckius
+EMAIL: mbuckius@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Your name here">
+  <meta name="description" content="description of your page">
+   <!-- you would link to an external stylesheet here! -->
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <!-- you would also link to Bootstrap here! -->
+   <link rel="icon" href="assets/bluelogo.svg">
+  <title>Mayuri Buckius</title>
+</head>
+<body>
+  <!-- HEADER AND MENU -->
+  <header class="header" id="top">
+    <nav class="nav">
+        <!-- logo -->
+        <a href="index.html" class="logo">
+          <img src="assets/bluelogo.svg" alt="A logo for the site, a cirle with MB inside">
+        </a>
+
+        <!-- bar and x icon for hamburger menu -->
+        <div class="icon" id="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+
+        <!-- navigation bar -->
+        <div class="nav-list" id="navigation">
+          <a href="index.html#top">About Me</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+  </header>
+
+  <h2 class="heading">E-Commerce Store</h2>
+  <a class="visit-site" href="https://jade-marshmallow-cd51d5.netlify.app/" target="_blank" rel="noopener noreferrer">visit site</a>
+
+  <div class="ecommerce-info">
+    <div class="store-photos">
+      <img src="assets/cc-womens-page.png" alt="Photo of womens page of shop.  It has 4 photos of sweaters">
+      <img src="assets/cc-product-page.png" alt="Example of a product page.  This is for a jean jacket, with photos on the left and a description on the right">
+      <img src="assets/cc-checkout-page.png" alt="Photo of the cart and checkout page.  There is a sweater in the cart and a way to pay at the bottom.">
+    </div>
+    <div>
+      <ul>
+        <li>This is an e-commerce store for clothing. It was built with React. It uses Firebase to store the information about clothes and allow users to create an account and login</li>
+        <li>Each product has its own page where the user can see a photos, a description, and the materials, choose a size, and add to cart</li>
+        <li>I used a Stripe API to allow users to make payments</li>
+        <li>There is a search function, so users can find products quicker.  It looks for exact matches within a product's name, description, or material.  It also ranks the matching products, depending on how many matches were found and whether those matches were in the name or not</li>
+      </ul>
+    </div>
+    
+  </div>>
+
+  <script>
+    function toggleMenu() {
+      var x = document.getElementById("navigation");
+      x.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
