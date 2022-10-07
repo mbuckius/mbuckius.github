@@ -19,26 +19,28 @@ EMAIL: mbuckius@uci.edu
 </head>
 <body>
    <!-- HEADER AND MENU -->
-   <header class="header" id="top">
+  <header class="header" id="top">
     <nav class="nav">
         <!-- logo -->
         <a href="index.html" class="logo">
           <img src="assets/bluelogo.svg" alt="A logo for the site, a cirle with MB inside">
         </a>
+        <div id="pop-up-nav" class="overlay">
+          <!-- bar and x icon for hamburger menu -->
+          <div class="icon" id="icon">
+            <em class="fa fa-bars" onclick="openNav()"></em>
+            <em class="fas fa-times" onclick="closeNav()"></em>
+          </div>
 
-        <!-- bar and x icon for hamburger menu -->
-        <div class="icon" id="icon" onclick="toggleMenu()">
-          <em class="fa fa-bars"></em>
-          <em class="fas fa-times"></em>
+          <!-- navigation bar -->
+          <div class="nav-list" id="navigation"  onclick="closeNav()">
+            <a href="index.html#top">About Me</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#resume">Resume</a>
+            <a href="https://github.com/mbuckius" target="_blank" rel="noopener noreferrer">github</a>
+          </div>
         </div>
-
-        <!-- navigation bar -->
-        <div class="nav-list" id="navigation">
-          <a href="index.html#top">About Me</a>
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#resume">Resume</a>
-          <a href="https://github.com/mbuckius" target="_blank" rel="noopener noreferrer">github</a>
-        </div>
+        
     </nav>
   </header>
 
@@ -64,9 +66,16 @@ EMAIL: mbuckius@uci.edu
   </div>
 
   <script>
-    function toggleMenu() {
-      var x = document.getElementById("navigation");
-      x.classList.toggle('open');
+    function openNav() {
+      var icons = document.getElementById("icon");
+      icons.classList.toggle('open');
+      document.getElementById("pop-up-nav").style.height = "100%";
+    }
+
+    function closeNav() {
+      var icons = document.getElementById("icon");
+      icons.classList.toggle('open');
+      document.getElementById("pop-up-nav").style.height = "0%";
     }
   </script>
 </body>

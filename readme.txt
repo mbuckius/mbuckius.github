@@ -12,7 +12,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 */14
 - 1/1 Readme
-- */3 Basic HTML content
+- 3/3 Basic HTML content
 - */3 Basic CSS styling
 - */1 Advanced feature
 - */3 Responsive layout
@@ -22,33 +22,28 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-    - I have a several photos with alt text
-    - I have added custom icons from Font Awesome to create the hamburger menu
-    - There is a link to an external website I created with React
-    - There are multiple pages (for my projects) with navigation between them
-
-
+    - I have a several photos with alt text.  There is a photo of me and screenshots showing my projects.
+    - There are headings for each section and page.  The "About Me" section and guesthouse page both have paragraph text.
+    - There is are links to an external website I created with React and to my github repositories.
+    - There are multiple pages (for my projects) with navigation between them.
+    - I have added custom icons from Font Awesome to create the hamburger menu and close button.
+    
 (b) CSS features
-    - I have added custom fonts from Google Fonts (Roboto Condensed)
-    - I added colors (blue and grey) to the texts, background, and links
-    - I have modified the margin and padding of the sections
-
+    - I have modified the margin and padding of the sections and text.
+    - I added colors (blue and grey) to the texts, background, and links.  The colors of the links change when the user hovers over them.
+    - I have added Roboto Condensed from Google Fonts with the fallback of sans-serif.
 
 (c) Advanced features
-    - I have added a navigation bar to easily take users to different parts of the page
-
+    - I have added a navigation bar to easily take users to different parts of the page.  When the screen is smaller, it changes to a hamburger menu that covers the entire screen when clicked.
 
 3. How long, in hours, did it take you to complete this assignment?
-
-
+    This took me 20 hours to complete.
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
 
 
-
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
-
+    I did not talk to any classmates about this assignment.
 
 6. Is there anything special we need to know in order to run your code?
 
