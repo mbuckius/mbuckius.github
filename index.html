@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 
+<!-- TODO: Change px to em, makes it relative to screen size -->
+
 <!--
 WRITTEN BY: Mayuri Buckius
 EMAIL: mbuckius@uci.edu
@@ -29,15 +31,16 @@ EMAIL: mbuckius@uci.edu
 
         <!-- bar and x icon for hamburger menu -->
         <div class="icon" id="icon" onclick="toggleMenu()">
-          <i class="fa fa-bars"></i>
-          <i class="fas fa-times"></i>
+          <em class="fa fa-bars"></em>
+          <em class="fas fa-times"></em>
         </div>
 
         <!-- navigation bar -->
         <div class="nav-list" id="navigation">
           <a href="index.html#top">About Me</a>
           <a href="index.html#projects">Projects</a>
-          <a href="index.html#contact">Contact</a>
+          <a href="index.html#resume">Resume</a>
+          <a href="https://github.com/mbuckius" target="_blank" rel="noopener noreferrer">github</a>
         </div>
     </nav>
   </header>
@@ -49,80 +52,45 @@ EMAIL: mbuckius@uci.edu
       <div>
         <h2 class="heading">Hello, my name is <br> Mayuri Buckius</h2>
         <p>
-          I am a Computer Science major at University of California, Irvine. I will be graduating June 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis eros est. Suspendisse feugiat lacus in mi posuere, quis facilisis nunc rhoncus. Sed consequat purus ut orci mollis eleifend. Phasellus ut placerat lectus, nec cursus augue. Fusce quis pharetra mi. Duis in lacus eu lacus mollis gravida at eu libero. Pellentesque a risus quis felis mollis suscipit.
+          I am a Computer Science major at University of California, Irvine. I will be graduating June 2023. 
+          I started learning CS a few years ago and instantly knew I wanted to do this as a career. Recently, 
+          I have been working on learning front-end development, but I am excited to learn more and add to 
+          my skillset.
         </p>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="project-container" id="projects">
-    <h2 class="heading">projects</h2>
-
+  <section class="project-section" id="projects">
     <div class="project-container">
-      <a href="ecommerce.html">E-Commerce Store</a>
-      <img src="assets/cc-checkout-page.png" alt="">
-      <a href="guesthouse.html">Hillside Guesthouse</a>
-      <img src="assets/hgh-home-page.png" alt="" >
+      <h2 class="heading">projects</h2>
+
+      <div class="projects-grid">
+        <div class="project">
+          <a href="ecommerce.html">
+            <h4 class="subheading">E-Commerce Store</h4>
+            <img src="assets/cc-checkout-page.png" alt="Photo of the cart and checkout page.  There is a sweater in the cart and a way to pay at the bottom.">
+          </a>
+        </div>
+       
+        <div class="project">
+          <a href="guesthouse.html">
+            <h4 class="subheading" >Hillside Guest House</h4>
+            <img src="assets/hgh-home-page.png" alt="Photo of home page for hillside guest house.  Shows title of site with a background photo of the front of the house" >
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
-  
-  <!-- CONTACT FORM -->
-  <section id="contact">
-    <!-- <h2 class="heading">Contact</h2>  
-        <div class="contact-content">
-            <form id="contact-form" action="./contact-form-handler.php" method="POST" class="form contact-form">
-                <div class="input-group-wrap">
-                    <div class="input-group">
-                        <input name="name" type="text" class="input" placeholder="Name" required>
-                        <span class="bar"></span>
-                    </div>
 
-                    <div class="input-group">
-                        <input name="email" type="email" class="input" placeholder="E-mail" required>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <input name="subject" type="text" class="input" placeholder="Subject" required>
-                    <span class="bar"></span>
-                </div>
-
-                <div class="input-group">
-                    <textarea name="message" class="input" cols="30" rows="8" placeholder="Message" required></textarea>
-                    <span class="bar"></span>
-                </div>                        
-
-                <button type="submit" class="btn form-btn btn-purple">Send Message
-                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
-                </button>
-                
-            </form>
-        </div> -->
-
-        <h3>Contact us</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-        </div>
+  <!-- RESUME -->
+  <section class="resume-section" id="resume">
+    <h2 class="heading">Resume</h2>
+    <a class="resume-link" href="assets/MayuriBuckiusResume.pdf" target="_blank">See my resume</a>
+    <img class="resume" src="assets/resume.png">
   </section>
-  
 
   <!-- <p>
     <a href="http://validator.w3.org/check?uri=referer">

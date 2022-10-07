@@ -16,6 +16,8 @@ body{
     font-size: 18px;
     color: white;
     background-color:var(--dark-background);
+    margin: 0;
+    padding: 0;
 }
 
 section {
@@ -55,11 +57,20 @@ q {
 }
 
 .heading {
+    margin: 20px;
     padding-bottom: 20px;
     text-align: center;
     font-size: 60px;
     text-transform: uppercase;
     color: var(--blue-color); 
+}
+
+.subheading {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white; 
 }
 
 /* NAVIGATION BAR */
@@ -103,9 +114,9 @@ q {
 }
 
 /* HOME PAGE */
-.home-section {
-    min-height: 80vh;
-}
+/* .home-section {
+    
+} */
 
 .home-page {
     width: 1000px;
@@ -116,6 +127,7 @@ q {
     column-gap: 40px;
     animation: fadeIn 1s;
 }
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -131,62 +143,58 @@ q {
 }
 
 /* PROJECTS */
+.project-section {
+    width: 100vw;
+}
+
 .project-container {
     width: 1000px;
     margin: 20px auto;
-    animation: fadeIn 1s;
+    animation: fadeIn 1s; 
 }
 
-.project-container img {
-    display: block;
-    width: 80%;
-    margin: auto;
+.projects-grid {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    column-gap: 40px;
+}
+
+.project {
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.project:hover .subheading{
+    color: var(--blue-color);
+}
+
+.project:hover {
+    transition: transform .5s ease-in-out;
+    transform: translateY(-5px);
+}
+
+.project img {
+    
+    width: 100%;
     outline: 2px dotted var(--blue-color);
     outline-offset: 5px;
 }
 
-/* CONTACT PAGE */
-/* .contact-content{
-    display: flex;
-    justify-content: center;
+/* RESUME */
+.resume-section {
+    margin-bottom: 10em;
 }
 
-.contact-form{
-    width: 100%;
-    background-color: rgb(141, 215, 176);
-    padding: 2.4rem;
-}
-
-.contact-form .input{
+.resume {
+    width: 45em;
+    height: 60em;
     display: block;
-    background-color: transparent;
-    color: black;
-    font-weight: normal;
-    border-bottom: 2px solid white;
-    padding-left: 0;
+    margin: 0 auto;
 }
 
-.bar{
-    display: block;
-    position: relative;
+.resume-link {
+    display: none;
 }
-
-.bar::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px;
-    background-color: var(--purple-light);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .5s;
-}
-
-.contact-form .input:focus + .bar::after{
-    transform: scaleX(1);
-} */
 
 /* ECOMMERCE */
 .ecommerce-info {
@@ -212,11 +220,8 @@ q {
 
 /* RESPONSIVENESS */
 @media screen and (max-width: 1200px) {
-    .home-page {
-        width: 80%;
-        margin: 20px auto;
-        padding: 20px;
-        display: block;
+    body {
+        font-size: 22px;
     }
 
     .nav-list a {
@@ -226,7 +231,7 @@ q {
     .icon {
         float: right;
         display: block;
-        font-size: 20px;
+        font-size: 40px;
         cursor: pointer;
         position: fixed;
         right: 20px;
@@ -256,10 +261,55 @@ q {
         float: none;
         display: block;
         text-align: left;
+        font-size: 28px;
     }
 
     .page-title {
         font-size: 30px;
     }
+
+    .home-page {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        display: block;
+    }
+
+    .project-container {
+        width: 80%;
+    }
+
+    .projects-grid {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .resume {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ecommerce-info {
+        width: 80%;
+        display: block;
+    }
 }
-  
+
+
+@media screen and (max-width: 640px) {
+    .resume {
+        display: none;
+    }
+
+    .resume-link {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .resume-section {
+        margin-bottom: 0;
+    }
+}
